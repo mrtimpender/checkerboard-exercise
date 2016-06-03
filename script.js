@@ -7,6 +7,8 @@ var randoColor = function(){
 }
 
 var checkerboard = function() {
+    var aud = document.createElement('div');
+    aud.innerHTML = "<audio autoplay='autoplay' src=http://noproblo.dayjo.org/ZeldaSounds/OOT/OOT_DekuSeed_Shoot.wav></audio>"
     document.body.innerHTML = "";
     document.body.style.margin = "0";
     document.body.backgroundColor = "black";
