@@ -7,12 +7,12 @@ var randoColor = function(){
 }
 
 var checkerboard = function() {
+    document.body.innerHTML = "";
     document.body.style.margin = "0";
     document.body.backgroundColor = "black";
     for (i=0; i<45; i++){
       var div = document.createElement('div');
       var rgb = "";
-      div.style.opacity = (1*(1-(i/45))).toString();
       div.style.width = "11.1%";
       div.style.cssFloat = "left";
       div.style.paddingBottom = "11.1%";
@@ -22,3 +22,4 @@ var checkerboard = function() {
 }
 
 checkerboard();
+setInterval(function() {checkerboard()}, 2000);
